@@ -1,0 +1,23 @@
+{
+  "name": "readmegenerator",
+  "version": "1.0.0",
+  "description": "readme generator cli using command line, inquirer and node modules.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rorydavidtanner/ReadmeGenerator.git"
+  },
+  "keywords": [
+    "readme",
+    "generator"
+  ],
+  "author": "Rory Tanner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rorydavidtanner/ReadmeGenerator/issues"
+  },
+  "homepage": "https://github.com/rorydavidtanner/ReadmeGenerator#readme"
+}

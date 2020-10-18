@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/rorydavidtanner/ReadmeGenerator/issues"
   },
-  "homepage": "https://github.com/rorydavidtanner/ReadmeGenerator#readme"
+  "homepage": "https://github.com/rorydavidtanner/ReadmeGenerator#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "inquirer": "^7.3.3"
+  }
 }

@@ -1,20 +1,21 @@
-// import & require modules and inquirer
+// import & require modules
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
 
-// internal modules 
+// import modules (local files)
 const generateMarkdown = require('./utils/generateMarkdown');
-const api = require('./utils/api.js');
+const api = require('./utils/api');
 
 // array of questions for user
 
 const questions = [
 	{
-        type: 'input',
-        message: "What is your GitHub username? (No @ needed)",
+		// Github username
+		type: 'input',
+        message: "What is your GitHub username?",
         name: 'username',
-        default: 'connietran-dev',
+        default: 'johnsmith',
         validate: function (answer) {
             if (answer.length < 1) {
                 return console.log("A valid GitHub username is required.");
@@ -23,10 +24,11 @@ const questions = [
         }
 	},
 	{
-        type: 'input',
+		// Repo Name 
+		type: 'input',
         message: "What is the name of your GitHub repo?",
         name: 'repo',
-        default: 'readme-generator',
+        default: 'my-repo',
         validate: function (answer) {
             if (answer.length < 1) {
                 return console.log("A valid GitHub repo is required for a badge.");
@@ -48,7 +50,8 @@ const questions = [
         }
     },
 	{
-        type: 'input',
+		// Description
+		type: 'input',
         message: "Write a description of your project.",
         name: 'description',
         default: 'Project Description',
@@ -83,7 +86,7 @@ const questions = [
 	},
 	{
         type: 'input',
-        message: "If applicable, describe the steps required to install your project for the Installation section.",
+        message: "Describe the steps required to install your project for the Installation section.",
         name: 'installation'
     },
     {
@@ -93,12 +96,12 @@ const questions = [
     },
     {
         type: 'input',
-        message: "If applicable, provide guidelines on how other developers can contribute to your project.",
+        message: "Provide guidelines on how other developers can contribute to your project.",
         name: 'contributing'
     },
     {
         type: 'input',
-        message: "If applicable, provide any tests written for your application and provide examples on how to run them.",
+        message: "Provide any tests written for your application and provide examples on how to run them.",
         name: 'tests'
     },
     {

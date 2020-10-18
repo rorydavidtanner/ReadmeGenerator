@@ -86,7 +86,7 @@ const questions = [
 	},
 	{
         type: 'input',
-        message: "Describe the steps required to install your project for the Installation section.",
+		message: "Describe the steps required to install your project for the Installation section.",
         name: 'installation'
     },
     {
@@ -120,7 +120,6 @@ function writeToFile(fileName, data) {
         if (err) {
           return console.log(err);
 		}
-
 		console.log ("Success! Your README.md file has been created")
 	});
 }

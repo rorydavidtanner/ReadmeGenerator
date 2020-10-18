@@ -29,14 +29,15 @@ const questions = [
 
 			return 'A professional README provides the project description.';
     },
-    {
+];
+   /*  {
         //Check on Screenshots and/or Demo
 		type: 'confirm',
 		name: 'screenshots',
 		message: 'Would you like to add screenshots or demo to README?',
 		default: false,
-    },
-    {
+    }, */
+    /* {
        // Get image path and/or URL
 		type: 'input',
 		name: 'imageURL',
@@ -50,8 +51,20 @@ const questions = [
 			}
 
 			return 'Provide the image paths or urls of screenshots or demo. '; 
+    }, */
+    /* {
+        // Installation Instructions
     },
-];
+    {
+        // Testing Instructions
+    },
+    {
+        // Usage Information
+    },
+    {
+        // Contribution Guidelines 
+    }, */
+
 
 // function to write README file
 

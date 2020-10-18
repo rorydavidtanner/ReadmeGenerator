@@ -39,8 +39,8 @@ const questions = [
 		type: 'input',
 		message: 'Enter the project name',
 		name: 'projectName',
-		default: 'Project Name'
-		validate: function (answer) {
+		default: 'Project Name',
+		validate: function(answer) {
             if (answer.length < 1) {
                 return console.log("A valid project title is required.");
             }
@@ -79,7 +79,8 @@ const questions = [
 				return true;
 			}
 			return 'Provide the image paths or urls of screenshots or demo. '; 
-    }, 
+		}
+	},
 	{
         type: 'input',
         message: "If applicable, describe the steps required to install your project for the Installation section.",
@@ -125,7 +126,7 @@ const writeFileAsync = util.promisify(writeToFile);
 
 // function to initialize program
 
-function init() {
+async function init() {
 	try {
 
         // Prompt Inquirer questions

@@ -41,7 +41,7 @@ You can use test.js to test the app.
 
 ## Credits
 
-External dependancies including inquirer, GitHub API.
+External dependancies including inquirer, FS, GitHub API.
 
 
 ## License

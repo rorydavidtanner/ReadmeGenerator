@@ -129,20 +129,21 @@ const writeFileAsync = util.promisify(writeToFile);
 // function to initialize program
 
 async function init() {
-	try {
-
-        // Prompt Inquirer questions
+    
+    try {
+        // Prompt questions from Inquirer
         const userResponses = await inquirer.prompt(questions);
         console.log("Your responses: ", userResponses);
         console.log("Thank you for your responses! Fetching your GitHub data next...");
     
-        // Call GitHub api for user info
+        // api for user info - Calling GitHub 
         const userInfo = await api.getUser(userResponses);
         console.log("Your GitHub user info: ", userInfo);
     
         // Pass Inquirer userResponses and GitHub userInfo to generateMarkdown
         console.log("Generating your README next...")
-        const markdown = generateMarkdown(userResponses, userInfo);
+        console.log(userResponses);
+        const markdown = generateMarkdown(userResponses);
         console.log(markdown);
     
         // Write markdown to file

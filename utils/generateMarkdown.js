@@ -30,13 +30,7 @@ ${data.tests}
 
 ## Licence
 ${data.license}
-    
-    
-    
-    
-    
-    
-    
+
     
     `;
   
